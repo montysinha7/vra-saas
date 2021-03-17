@@ -19,14 +19,14 @@ variable "name" {
   description = "rds name"
 }
 
-variable "dbusername" {
+variable "username" {
   type        = string
-  description = "username"
+  description = "db username"
 }
 
-variable "dbpassword" {
+variable "password" {
   type        = string
-  description = "password"
+  description = "db password"
 }
 resource "aws_db_subnet_group" "_" {
   name       = "${var.name}-subnet-group"
